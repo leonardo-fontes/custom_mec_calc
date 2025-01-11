@@ -59,7 +59,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex w-full flex-col items-center min-h-screen text-gray-700 bg-[url('image.png')]">
+    <div className="flex w-full flex-col items-center min-h-screen text-gray-700 bg-[url('/images/image.png')]">
       <div className="absolute top-4 left-4 p-4 bg-white text-black rounded shadow-lg">
         <h2 className="font-bold text-xl">REPAROS</h2>
         <p>REPARO DENTRO DA MEC: 5.000</p>
@@ -81,8 +81,8 @@ const App: React.FC = () => {
           Sem blindagem: 350.000 <br /> Com blindagem: 400.000
         </p>
       </div>
-      <div className="flex flex-col items-center mt-12 py-8 px-4 justify-center bg-white p-4 rounded shadow-lg">
-        <h1 className="text-6xl font-bold my-6 text-black">MECÂNICA CUSTOM</h1>
+      <div className="flex flex-col items-center mt-4 py-8 px-4 justify-center bg-white p-4 rounded shadow-lg">
+        <h1 className="text-6xl font-bold text-black">MECÂNICA CUSTOM</h1>
         <div className="flex gap-4 w-full justify-end p-4">
           <button
             onClick={handleAddAll}
@@ -116,7 +116,7 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-4 gap-[60px] mt-4">
+        <div className="grid grid-cols-4 gap-[60px]">
           <div className="p-4">
             <h2 className="mb-2 font-bold text-2xl text-black">BLINDAGEM</h2>
             <select
@@ -170,7 +170,7 @@ const App: React.FC = () => {
             </select>
           </div>
         </div>
-        <h2 className="text-4xl font-bold mt-12 text-black">
+        <h2 className="text-4xl font-bold mt-6 text-black">
           TOTAL: R${total}
         </h2>
       </div>
